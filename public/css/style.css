@@ -52,7 +52,42 @@ td:not([align]), th:not([align]) {
 
 /* Utils */
 /* Couleurs Principales */
+/* Couleurs Utilitaires */
 /* Layouts */
+.logo-title {
+  font-family: 'Shrikhand', cursive;
+  font-size: 2rem;
+  text-align: center;
+  padding: .7rem 0;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
 /* Composants */
 /* Pages */
+.localisation {
+  background-color: #eaeaea;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.localisation-icon {
+  margin-right: 1rem;
+}
+
+.localisation-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: .9rem;
+}
 /*# sourceMappingURL=style.css.map */
