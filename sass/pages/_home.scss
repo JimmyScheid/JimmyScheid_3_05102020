@@ -34,12 +34,7 @@
         margin: 1rem 0;
     }
     &-button{
-        border: none;
-        background: linear-gradient($couleur-secondaire, $couleur-principale);
-        border-radius: 50px;
-        color: white;
-        font-size: 1rem;
-        box-shadow: 0px 3px 8px rgba(0, 0px, 0px, .3);
+        @include button;
         padding: 1rem 1.4rem;
         margin: 1rem 0;
     }
