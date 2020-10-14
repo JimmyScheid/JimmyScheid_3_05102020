@@ -1,0 +1,23 @@
+/* Base */
+@import "base/minireset";
+
+/* Utils */
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/placeholders";
+@import "utils/functions";
+
+/* Layouts */
+@import "layouts/header";
+@import "layouts/footer";
+
+/* Composants */
+@import "components/buttons";
+
+/* Pages */
+@import "pages/home";
+@import "pages/alafrancaise";
+@import "pages/lanoteenchantee";
+@import "pages/lapalettedugout";
+@import "pages/ledelicedessens";
+
