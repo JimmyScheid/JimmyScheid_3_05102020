@@ -106,7 +106,49 @@ a{
 }
 
 
-
+.restaurant{
+    background: $fond-gris-principal;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem 1.2rem ;
+    &-global{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &-card{
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 1rem;
+        &-img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        &-desc{
+            padding: .8rem 1rem;
+        }
+        &-name{
+            font-size: 1rem;
+            font-weight: 900;
+            line-height: 1.5rem;
+            span{
+                text-transform: uppercase;
+            }
+        }
+        &-ville{
+            font-size: .9rem;
+        }
+        &-icon{
+            position: absolute;
+            font-size: 1.5rem;
+            bottom: 1.5rem;
+            right: 1.5rem;
+        }
+    }  
+}
 
 
 
