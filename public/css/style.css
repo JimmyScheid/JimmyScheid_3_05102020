@@ -273,4 +273,56 @@ a {
   bottom: 1.5rem;
   right: 1.5rem;
 }
+
+.footer {
+  background: #353535;
+  padding: 1.5rem;
+}
+
+.footer-global {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-logo {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-bottom: .5rem;
+}
+
+.footer-item-icon {
+  font-size: .6rem;
+  width: 1.5rem;
+}
+
+.footer-item-text {
+  font-size: .8rem;
+}
+
+.footer-contact {
+  font-size: .8rem;
+}
+
+.footer-contact-text {
+  color: white;
+  margin-bottom: .5rem;
+}
 /*# sourceMappingURL=style.css.map */
