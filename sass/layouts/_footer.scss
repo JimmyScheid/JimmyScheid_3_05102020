@@ -1,0 +1,48 @@
+.footer{
+    background: $bg-fond-sombre;
+    padding: 1.5rem;
+    &-global{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &-logo{
+        font-family: $font-cursive;
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-bottom: .5rem;
+        &-icon{
+            font-size: .6rem;
+            width: 1.5rem;
+        }
+        &-text{
+            font-size: .8rem;
+        }
+    }
+    &-contact{
+        font-size: .8rem;
+        &-text{
+            color: white;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+@media screen and (min-width:768px){
+    .footer{
+        padding: 1.5rem;
+        &-global{
+            width: 95%;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+    } 
+}

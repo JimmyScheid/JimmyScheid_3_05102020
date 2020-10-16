@@ -66,6 +66,78 @@ td:not([align]), th:not([align]) {
   z-index: 1;
 }
 
+.footer {
+  background: #353535;
+  padding: 1.5rem;
+}
+
+.footer-global {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-logo {
+  font-family: "Shrikhand", cursive;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-bottom: .5rem;
+}
+
+.footer-item-icon {
+  font-size: .6rem;
+  width: 1.5rem;
+}
+
+.footer-item-text {
+  font-size: .8rem;
+}
+
+.footer-contact {
+  font-size: .8rem;
+}
+
+.footer-contact-text {
+  color: white;
+  margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 1.5rem;
+  }
+  .footer-global {
+    width: 95%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 /* Composants */
 /* Pages */
 body {
@@ -80,7 +152,7 @@ a {
 .title {
   font-size: 1.2rem;
   font-weight: 700;
-  padding-bottom: 1rem;
+  padding: 2rem 0;
 }
 
 /* Section Localisation */
@@ -154,7 +226,7 @@ a {
 .progress {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2.5rem 1.2rem;
+  padding: 1rem 1.2rem;
 }
 
 .progress-global {
@@ -168,8 +240,14 @@ a {
 }
 
 .progress-global-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f6f6f6;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   margin-left: .5rem;
   border-radius: 25px;
   position: relative;
@@ -216,11 +294,39 @@ a {
   font-weight: 700;
 }
 
+@media screen and (min-width: 768px) {
+  .title {
+    text-align: center;
+  }
+  .progress {
+    padding-top: 1rem;
+  }
+  .progress-global {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .progress-global-item {
+    width: calc(50% - 1.5rem);
+    padding: .5rem 1.5rem;
+    margin-right: 1rem;
+  }
+}
+
 .restaurant {
   background: #eaeaea;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2.5rem 1.2rem;
+  padding: 1rem 1.2rem;
 }
 
 .restaurant-global {
@@ -274,56 +380,27 @@ a {
   right: 1.5rem;
 }
 
-.footer {
-  background: #353535;
-  padding: 1.5rem;
-}
-
-.footer-global {
-  max-width: 1440px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.footer-logo {
-  font-family: "Shrikhand", cursive;
-  color: white;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.footer-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  margin-bottom: .5rem;
-}
-
-.footer-item-icon {
-  font-size: .6rem;
-  width: 1.5rem;
-}
-
-.footer-item-text {
-  font-size: .8rem;
-}
-
-.footer-contact {
-  font-size: .8rem;
-}
-
-.footer-contact-text {
-  color: white;
-  margin-bottom: .5rem;
+@media screen and (min-width: 768px) {
+  .restaurant {
+    padding-top: 1rem;
+  }
+  .restaurant-global {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .restaurant-card {
+    margin-right: 1rem;
+    width: calc(50% - 1rem);
+  }
+  .restaurant-card:nth-child(2), .restaurant-card:nth-child(4) {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

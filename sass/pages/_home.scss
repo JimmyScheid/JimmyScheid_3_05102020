@@ -10,7 +10,7 @@ a{
 .title{
     font-size: 1.2rem;
     font-weight: 700;
-    padding-bottom: 1rem; 
+    padding: 2rem 0; 
 }
 
 /* Section Localisation */
@@ -64,13 +64,15 @@ a{
 .progress{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 2.5rem 1.2rem ;
+    padding: 1rem 1.2rem ;
     &-global{
         display: flex;
         flex-direction: column;
         &-item{
+            display: flex;
+                align-items: center;
             background-color: $fond-gris-secondaire;
-            padding: 1.5rem;
+            padding: 1rem 1.5rem;
             margin-left: .5rem;
             border-radius: 25px;
             position: relative;
@@ -104,13 +106,32 @@ a{
         }
     }
 }
+@media screen and (min-width:768px){
+    .title{
+        text-align: center;
+    }
+    .progress{
+        padding-top: 1rem;
+        &-global{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            &-item{
+                width: calc(50% - 1.5rem);
+                padding: .5rem 1.5rem;
+                margin-right: 1rem;
+            }
+            }
+        }
+}
 
 
 .restaurant{
     background: $fond-gris-principal;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 2.5rem 1.2rem ;
+    padding: 1rem 1.2rem ;
     &-global{
         margin: 0 auto;
         display: flex;
@@ -150,43 +171,24 @@ a{
     }  
 }
 
-
-.footer{
-    background: $bg-fond-sombre;
-    padding: 1.5rem;
-    &-global{
-        max-width: 1440px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-    }
-    &-logo{
-        font-family: $font-cursive;
-        color: white;
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    &-item{
-        display: flex;
-        align-items: center;
-        color: white;
-        margin-bottom: .5rem;
-        &-icon{
-            font-size: .6rem;
-            width: 1.5rem;
+@media screen and (min-width:768px){
+    .restaurant{
+        padding-top: 1rem;
+        &-global{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;    
         }
-        &-text{
-            font-size: .8rem;
-        }
-    }
-    &-contact{
-        font-size: .8rem;
-        &-text{
-            color: white;
-            margin-bottom: .5rem;
-        }
+        &-card{
+            margin-right: 1rem;
+            width: calc(50% - 1rem);
+            &:nth-child(2), &:nth-child(4) {
+                margin-right: 0;
+            }
+        }  
     }
 }
+
 
 
 
