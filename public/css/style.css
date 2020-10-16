@@ -150,7 +150,7 @@ a {
 }
 
 .title {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
   padding: 2rem 0;
 }
@@ -323,9 +323,6 @@ a {
 }
 
 @media screen and (min-width: 992px) {
-  .title {
-    font-size: 2rem;
-  }
   .progress-global-item {
     width: calc(33% - 1.5rem);
   }
