@@ -1,5 +1,5 @@
 %title-card-restaurant {
-    padding: 0 2rem 3rem;
+    padding: 1.5rem 2rem 0;
     & h2{
         font-size: 1rem;
         text-transform: uppercase;
@@ -7,7 +7,7 @@
         margin-bottom: 1rem;
         &:before{
             content: "";
-            width: 3rem;
+            width: 2.5rem;
             height: .2rem;
             background: $couleur-tertiaire;
             position: absolute;

@@ -56,7 +56,7 @@ td:not([align]), th:not([align]) {
 /* Font Typographie */
 /* Couleur Typographie */
 .entree, .meal, .dessert {
-  padding: 0 2rem 3rem;
+  padding: 1.5rem 2rem 0;
 }
 
 .entree h2, .meal h2, .dessert h2 {
@@ -68,7 +68,7 @@ td:not([align]), th:not([align]) {
 
 .entree h2:before, .meal h2:before, .dessert h2:before {
   content: "";
-  width: 3rem;
+  width: 2.5rem;
   height: .2rem;
   background: #99E2D0;
   position: absolute;
@@ -89,7 +89,7 @@ td:not([align]), th:not([align]) {
 
 .footer {
   background: #353535;
-  padding: 1.5rem 0;
+  padding: 1.5rem 2rem;
 }
 
 .footer-global {
@@ -123,7 +123,7 @@ td:not([align]), th:not([align]) {
 }
 
 .footer-item-icon {
-  font-size: .9rem;
+  font-size: .8rem;
   width: 1.5rem;
 }
 
@@ -142,7 +142,7 @@ td:not([align]), th:not([align]) {
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
   }
   .footer-global {
     width: 95%;
@@ -484,16 +484,16 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 2rem;
-  background: #eaeaea;
+  padding: 2rem 2rem .7rem;
+  background: #f6f6f6;
   font-family: "Shrikhand", cursive;
-  font-size: 2rem;
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
+  font-size: 1.7rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
 }
 
 .menu {
-  background: #eaeaea;
+  background: #f6f6f6;
   max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,8 +513,8 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: white;
-  padding: .5rem 1rem;
-  border-radius: 1.5rem;
+  padding: .7rem 1rem;
+  border-radius: 1rem;
   position: relative;
   overflow: hidden;
   margin-bottom: 1rem;
@@ -527,16 +527,16 @@ a {
 }
 
 .item-desc h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 30px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 .item-desc p {
-  font-size: 1.25rem;
+  font-size: .9rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -550,7 +550,7 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: .9rem;
 }
 
 .menu-button {
@@ -565,8 +565,8 @@ a {
           box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
   padding: 1.1rem 0;
   width: 200px;
-  margin: 0 auto;
-  margin-bottom: 3rem;
+  margin: 2rem auto 4rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {

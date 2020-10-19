@@ -1,6 +1,6 @@
 .footer{
     background: $fond-gris-footer;
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
     &-global{
         max-width: 1440px;
         margin: 0 auto;
@@ -19,7 +19,7 @@
         color: white;
         margin-bottom: .5rem;
         &-icon{
-            font-size: .9rem;
+            font-size: .8rem;
             width: 1.5rem;
         }
         &-text{
@@ -37,7 +37,7 @@
 
 @media screen and (min-width:768px){
     .footer{
-        padding: 1.5rem;
+        padding: 1.5rem 0;
         &-global{
             width: 95%;
             flex-direction: row;
