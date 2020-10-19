@@ -1,6 +1,6 @@
 .footer{
-    background: $bg-fond-sombre;
-    padding: 1.5rem;
+    background: $fond-gris-footer;
+    padding: 1.5rem 0;
     &-global{
         max-width: 1440px;
         margin: 0 auto;
@@ -10,8 +10,8 @@
     &-logo{
         font-family: $font-cursive;
         color: white;
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
     &-item{
         display: flex;
@@ -19,15 +19,15 @@
         color: white;
         margin-bottom: .5rem;
         &-icon{
-            font-size: .6rem;
+            font-size: .9rem;
             width: 1.5rem;
         }
         &-text{
-            font-size: .8rem;
+            font-size: 1rem;
         }
     }
     &-contact{
-        font-size: .8rem;
+        font-size: 1rem;
         &-text{
             color: white;
             margin-bottom: .5rem;

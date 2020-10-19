@@ -16,7 +16,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 1rem 2rem;
-        background: $fond-gris-principal;
+        background: $fond-gris-localisation;
         font-family: $font-cursive;
         font-size: 2rem;
         border-top-left-radius: 3rem;
@@ -25,7 +25,7 @@
 }
 
 .menu{
-    background: $fond-gris-principal;
+    background: $fond-gris-localisation;
     max-width: 1440px;
     display: flex;
     flex-direction: column;

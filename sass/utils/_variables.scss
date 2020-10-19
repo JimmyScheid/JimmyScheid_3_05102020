@@ -4,11 +4,14 @@ $couleur-secondaire : #FF79DA;
 $couleur-tertiaire : #99E2D0;
 
 /* Couleurs Utilitaires */
-$fond-gris-principal : #eaeaea;
-$fond-gris-secondaire : #f6f6f6;
-$bg-fond-sombre : #353535;
+$fond-gris-localisation : #eaeaea;
+$fond-gris-restaurant : #f6f6f6;
+$fond-gris-icon : #7e7e7e;
+$fond-gris-footer : #353535;
 
-
-/* Typographie */
+/* Font Typographie */
 $font-cursive: 'Shrikhand', cursive;
 $font-sans-serif: 'Roboto', sans-serif;
+
+/* Couleur Typographie */
+$font-vert : #56baa2;

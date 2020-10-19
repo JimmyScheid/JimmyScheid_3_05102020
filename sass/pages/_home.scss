@@ -8,15 +8,15 @@ a{
 }
 
 .title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    padding: 2rem 0; 
+    padding: 2.5rem 0 2rem; 
 }
 
 /* Section Localisation */
 
 .localisation{
-    background-color: $fond-gris-principal;
+    background-color: $fond-gris-localisation;
     padding: 1rem 0;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ a{
     }
     &-text{
         font-weight: 500;
-        font-size: .9rem;
+        font-size: 1rem;
     }  
 }
 
@@ -37,23 +37,23 @@ a{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: $fond-gris-secondaire;
-    padding: 2rem 0;
+    background-color: $fond-gris-restaurant;
+    padding: 2.5rem 0;
     &-title{
         width: 70%;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         font-weight: 700;
     }
     &-desc{
         width: 80%;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: 300;
-        margin: 1rem 0;
+        margin: .5rem 0 1rem 0;
     }
     &-button{
         @include button;
         padding: 1rem 1.4rem;
-        margin: 1rem 0;
+        margin: 1.2rem 0;
     }
 }
 
@@ -64,15 +64,15 @@ a{
 .progress{
     max-width: 1440px;
     margin: 0 auto;
-    padding: 1rem 1.2rem ;
+    padding: 0 1.2rem 2.8rem 1.2rem  ;
     &-global{
         display: flex;
         flex-direction: column;
         &-item{
             display: flex;
-                align-items: center;
-            background-color: $fond-gris-secondaire;
-            padding: 1rem 1.5rem;
+            align-items: center;
+            background-color: $fond-gris-restaurant;
+            padding: 1.7rem 1.5rem;
             margin-left: .5rem;
             border-radius: 25px;
             position: relative;
@@ -81,23 +81,24 @@ a{
             
             &-number{
                 position: absolute;
-                left: -.5rem;
+                left: -.7rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 1.3rem;
-                height: 1.3rem;
+                width: 1.5rem;
+                height: 1.5rem;
                 border-radius: 50px;
                 background: $couleur-principale;
                 color: white;
-                font-size: .7rem;
+                font-size: .9rem;
             }
             &-desc{
                 display: flex;
                 align-items: center;
                 &-icon{
                     margin: 0 1.5rem 0 .7rem;
-                    color: $bg-fond-sombre;
+                    color: $fond-gris-icon;
+                    font-size: 1.3rem;
                 }
                 &-text{
                     font-weight: 700;
@@ -134,8 +135,8 @@ a{
 
 
 .restaurant{
-    background: $fond-gris-principal;
-    padding: 1rem 1.2rem ;
+    background: $fond-gris-restaurant;
+    padding: 0 1.2rem 3rem  ;
     &-global{
         max-width: 1440px;
         margin: 0 auto;
@@ -150,14 +151,14 @@ a{
         margin-bottom: 1rem;
         &-img{
             width: 100%;
-            height: 150px;
+            height: 180px;
             object-fit: cover;
         }
         &-desc{
             padding: .8rem 1rem;
         }
         &-name{
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 900;
             line-height: 1.5rem;
             span{
@@ -165,7 +166,7 @@ a{
             }
         }
         &-ville{
-            font-size: .9rem;
+            font-size: 1rem;
         }
         &-icon{
             position: absolute;

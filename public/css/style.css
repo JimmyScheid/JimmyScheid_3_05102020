@@ -53,7 +53,8 @@ td:not([align]), th:not([align]) {
 /* Utils */
 /* Couleurs Principales */
 /* Couleurs Utilitaires */
-/* Typographie */
+/* Font Typographie */
+/* Couleur Typographie */
 .entree, .meal, .dessert {
   padding: 0 2rem 3rem;
 }
@@ -77,18 +78,18 @@ td:not([align]), th:not([align]) {
 /* Layouts */
 .logo-title {
   font-family: "Shrikhand", cursive;
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-align: center;
-  padding: .7rem 0;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: .5rem 0;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
 }
 
 .footer {
   background: #353535;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 .footer-global {
@@ -106,8 +107,8 @@ td:not([align]), th:not([align]) {
 .footer-logo {
   font-family: "Shrikhand", cursive;
   color: white;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .footer-item {
@@ -122,16 +123,16 @@ td:not([align]), th:not([align]) {
 }
 
 .footer-item-icon {
-  font-size: .6rem;
+  font-size: .9rem;
   width: 1.5rem;
 }
 
 .footer-item-text {
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .footer-contact {
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .footer-contact-text {
@@ -170,9 +171,9 @@ a {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  padding: 2rem 0;
+  padding: 2.5rem 0 2rem;
 }
 
 /* Section Localisation */
@@ -196,7 +197,7 @@ a {
 
 .localisation-text {
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 /* Section Presentation */
@@ -213,20 +214,20 @@ a {
           align-items: center;
   text-align: center;
   background-color: #f6f6f6;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 }
 
 .presentation-title {
   width: 70%;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .presentation-desc {
   width: 80%;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
-  margin: 1rem 0;
+  margin: .5rem 0 1rem 0;
 }
 
 .presentation-button {
@@ -235,19 +236,19 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
   color: white;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 700;
   -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
   padding: 1rem 1.4rem;
-  margin: 1rem 0;
+  margin: 1.2rem 0;
 }
 
 /* Section Progress */
 .progress {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1rem 1.2rem;
+  padding: 0 1.2rem 2.8rem 1.2rem;
 }
 
 .progress-global {
@@ -268,7 +269,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f6f6f6;
-  padding: 1rem 1.5rem;
+  padding: 1.7rem 1.5rem;
   margin-left: .5rem;
   border-radius: 25px;
   position: relative;
@@ -279,7 +280,7 @@ a {
 
 .progress-global-item-number {
   position: absolute;
-  left: -.5rem;
+  left: -.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,12 +290,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50px;
   background: #9356DC;
   color: white;
-  font-size: .7rem;
+  font-size: .9rem;
 }
 
 .progress-global-item-desc {
@@ -308,7 +309,8 @@ a {
 
 .progress-global-item-desc-icon {
   margin: 0 1.5rem 0 .7rem;
-  color: #353535;
+  color: #7e7e7e;
+  font-size: 1.3rem;
 }
 
 .progress-global-item-desc-text {
@@ -350,8 +352,8 @@ a {
 }
 
 .restaurant {
-  background: #eaeaea;
-  padding: 1rem 1.2rem;
+  background: #f6f6f6;
+  padding: 0 1.2rem 3rem;
 }
 
 .restaurant-global {
@@ -376,7 +378,7 @@ a {
 
 .restaurant-card-img {
   width: 100%;
-  height: 150px;
+  height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -386,7 +388,7 @@ a {
 }
 
 .restaurant-card-name {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 900;
   line-height: 1.5rem;
 }
@@ -396,7 +398,7 @@ a {
 }
 
 .restaurant-card-ville {
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .restaurant-card-icon {
@@ -557,7 +559,7 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
   color: white;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 700;
   -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
