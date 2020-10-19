@@ -54,6 +54,26 @@ td:not([align]), th:not([align]) {
 /* Couleurs Principales */
 /* Couleurs Utilitaires */
 /* Typographie */
+.entree, .meal, .dessert {
+  padding: 0 2rem 3rem;
+}
+
+.entree h2, .meal h2, .dessert h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.entree h2:before, .meal h2:before, .dessert h2:before {
+  content: "";
+  width: 3rem;
+  height: .2rem;
+  background: #99E2D0;
+  position: absolute;
+  bottom: -5px;
+}
+
 /* Layouts */
 .logo-title {
   font-family: "Shrikhand", cursive;
@@ -252,8 +272,8 @@ a {
   border-radius: 25px;
   position: relative;
   margin-bottom: 1.5rem;
-  -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
 }
 
 .progress-global-item-number {
@@ -475,64 +495,44 @@ a {
   margin: 0 auto;
 }
 
-.entree {
-  padding: 0 2rem;
-}
-
-.entree h2 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-.entree h2:before {
-  content: "";
-  width: 3rem;
-  height: .2rem;
-  background: #99E2D0;
-  position: absolute;
-  bottom: -5px;
-}
-
-.entree-item {
+.item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: rebeccapurple;
-  padding: 1rem;
+  background: white;
+  padding: .5rem 1rem;
   border-radius: 1.5rem;
   position: relative;
   overflow: hidden;
   margin-bottom: 1rem;
-  /* &-check{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: $couleur-tertiaire;
-            width: 100px;
-            height: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            color: white;
-        } */
+  -webkit-box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
 }
 
-.entree-item-desc h3 {
+.item-desc {
+  width: 80%;
+}
+
+.item-desc h3 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.entree-item-desc p {
+.item-desc p {
   font-size: 1.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.entree-item-prix {
+.item-prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
