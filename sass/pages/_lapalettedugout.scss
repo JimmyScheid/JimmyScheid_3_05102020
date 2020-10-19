@@ -10,7 +10,7 @@
         bottom: 0; 
         left: 50%;
         transform: translate(-50%, 0);
-        max-width: 1200px;
+        max-width: 1440px;
         width: 100%;   
         display: flex;
         align-items: center;
@@ -26,7 +26,9 @@
 
 .menu{
     background: $fond-gris-principal;
-    max-width: 1200px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -75,4 +77,12 @@
         font-weight: 700;
         font-size: 1.25rem;
     }
+}
+
+.menu-button{
+    @include button;
+    padding: 1.1rem 0;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
 }

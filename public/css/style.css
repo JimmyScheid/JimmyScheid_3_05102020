@@ -236,6 +236,7 @@ a {
   border-radius: 50px;
   color: white;
   font-size: 1rem;
+  font-weight: 700;
   -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
   padding: 1rem 1.4rem;
@@ -470,7 +471,7 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  max-width: 1200px;
+  max-width: 1440px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -491,7 +492,14 @@ a {
 
 .menu {
   background: #eaeaea;
-  max-width: 1200px;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
 }
 
@@ -541,5 +549,21 @@ a {
           align-items: flex-end;
   font-weight: 700;
   font-size: 1.25rem;
+}
+
+.menu-button {
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  padding: 1.1rem 0;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
