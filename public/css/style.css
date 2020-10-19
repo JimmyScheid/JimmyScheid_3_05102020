@@ -566,4 +566,14 @@ a {
   margin: 0 auto;
   margin-bottom: 3rem;
 }
+
+@media screen and (min-width: 992px) {
+  .hero-title {
+    position: relative;
+    background: white;
+  }
+  .menu {
+    background: white;
+  }
+}
 /*# sourceMappingURL=style.css.map */
