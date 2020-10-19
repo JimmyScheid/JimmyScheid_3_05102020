@@ -1,11 +1,12 @@
 .footer{
     background: $fond-gris-footer;
-    padding: 1.5rem 2rem;
+    
     &-global{
         max-width: 1440px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+        padding: 1.5rem 2rem;
     }
     &-logo{
         font-family: $font-cursive;
@@ -37,12 +38,12 @@
 
 @media screen and (min-width:768px){
     .footer{
-        padding: 1.5rem 0;
         &-global{
             width: 95%;
             flex-direction: row;
             align-items: baseline;
             justify-content: space-between;
+            padding: 1.5rem;
         }
     } 
 }

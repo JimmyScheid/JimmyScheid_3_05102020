@@ -89,7 +89,6 @@ td:not([align]), th:not([align]) {
 
 .footer {
   background: #353535;
-  padding: 1.5rem 2rem;
 }
 
 .footer-global {
@@ -102,6 +101,7 @@ td:not([align]), th:not([align]) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 1.5rem 2rem;
 }
 
 .footer-logo {
@@ -141,9 +141,6 @@ td:not([align]), th:not([align]) {
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    padding: 1.5rem 0;
-  }
   .footer-global {
     width: 95%;
     -webkit-box-orient: horizontal;
@@ -156,6 +153,7 @@ td:not([align]), th:not([align]) {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 1.5rem;
   }
 }
 
