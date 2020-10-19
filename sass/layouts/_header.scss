@@ -1,3 +1,15 @@
+header{
+    position: relative;
+}
+
+.back{
+    position: absolute;
+    left: 2rem;
+    z-index: 2;
+    top: 1.4rem;
+    cursor: pointer;
+}
+
 .logo-title{
     font-family: $font-cursive;
     font-size: 1.9rem;
