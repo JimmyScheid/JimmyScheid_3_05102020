@@ -466,6 +466,10 @@ a {
   }
 }
 
+h1 > span {
+  text-transform: uppercase;
+}
+
 .hero {
   position: relative;
 }
