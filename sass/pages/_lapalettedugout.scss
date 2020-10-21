@@ -9,9 +9,8 @@
     }
     &-title{
         position: absolute;
-        bottom: 0; 
-        left: 50%;
-        transform: translate(-50%, 0);
+        bottom: 0;
+        margin: 0 auto; 
         max-width: 1440px;
         width: 100%;   
         display: flex;
@@ -22,8 +21,17 @@
         font-family: $font-cursive;
         font-size: 1.7rem;
         border-top-left-radius: 2.5rem;
-        border-top-right-radius: 2.5rem;   
+        border-top-right-radius: 2.5rem;
+        & h1 {
+            animation: slidleft 2s  both ease;
+        }
     }
+}
+.heart-icon{
+    position: absolute;
+    font-size: 1.5rem;
+    right: 2.5rem;
+    animation: slidleft 2s  both ease;
 }
 
 .menu{
@@ -32,6 +40,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    animation: slideleft 2s .5 both ease; 
 }
 
 .entree{
@@ -81,12 +90,61 @@
     }
 }
 
+
+.item0{
+    animation: sliddown 2s  both ease;
+ }
+
+.item1{
+    animation: sliddown 2s .4s both ease;
+ }
+.item2{
+    animation: sliddown 2s .8s both ease;
+}
+.item3{
+    animation: sliddown 2s 1.2s both ease;
+}
+
+
+@keyframes sliddown{
+0%{
+  opacity: 0;
+  transform: translateY(-100px);
+  margin-top: -60px;
+}
+50%{
+    opacity:0;
+}
+100%{
+  opacity: 1;
+  transform: translateY(0px);
+  margin-top: 0;
+}
+}
+
+
+@keyframes slidleft{
+    0%{
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    }
+    
+
 .menu-button{
     @include button;
     padding: 1.1rem 0;
     width: 200px;
     margin: 2rem auto 4rem;
     cursor: pointer;
+
 }
 
 @media screen and (min-width:992px){
