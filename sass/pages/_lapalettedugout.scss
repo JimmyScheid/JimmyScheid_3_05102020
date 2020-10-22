@@ -1,4 +1,6 @@
-
+.load-spinner{
+    animation: load-wrapper 3s both;
+}
 
 .hero {
     position: relative;
@@ -23,7 +25,7 @@
         border-top-left-radius: 2.5rem;
         border-top-right-radius: 2.5rem;
         & h1 {
-            animation: slidleft 2s  both ease;
+            animation: slidleft 2s both ease;
         }
     }
 }
@@ -95,13 +97,13 @@
 
 
 .item1{
-    animation: sliddown 2s 0s both ease;
+    animation: sliddown 2s 1.5s both ease;
  }
 .item2{
-    animation: sliddown 2s .4s both ease;
+    animation: sliddown 2s 1.9s both ease;
 }
 .item3{
-    animation: sliddown 2s .8s both ease;
+    animation: sliddown 2s 2.3s both ease;
 }
 
 

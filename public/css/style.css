@@ -57,6 +57,7 @@ td:not([align]), th:not([align]) {
 /* Couleur Typographie */
 .entree, .meal, .dessert {
   padding: 1.5rem 2rem 0;
+  position: relative;
 }
 
 .entree h2, .meal h2, .dessert h2 {
@@ -201,19 +202,8 @@ header {
   -webkit-text-stroke: 0px white;
 }
 
-/* Pages */
-.load-wrapper {
-  width: 100%;
-  height: 100vh;
-  background: white;
-  opacity: 1;
-  position: fixed;
-  -webkit-animation: load-wrapper 3s both;
-          animation: load-wrapper 3s both;
-}
-
 .book {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -223,6 +213,7 @@ header {
   background: #9356DC;
   border: 5px solid #FF79DA;
   border-radius: 5px;
+  z-index: 2;
 }
 
 .book_page {
@@ -314,6 +305,17 @@ header {
   }
 }
 
+/* Pages */
+.load-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  opacity: 1;
+  position: fixed;
+  -webkit-animation: load-wrapper 3s both;
+          animation: load-wrapper 3s both;
+}
+
 @-webkit-keyframes load-wrapper {
   0% {
     opacity: 1;
@@ -322,7 +324,7 @@ header {
   70% {
     opacity: 1;
   }
-  99.9% {
+  99% {
     z-index: 2;
   }
   100% {
@@ -339,7 +341,7 @@ header {
   70% {
     opacity: 1;
   }
-  99.9% {
+  99% {
     z-index: 2;
   }
   100% {
@@ -698,6 +700,11 @@ h1 > span {
   text-transform: uppercase;
 }
 
+.load-spinner {
+  -webkit-animation: load-wrapper 3s both;
+          animation: load-wrapper 3s both;
+}
+
 .hero {
   position: relative;
 }
@@ -733,8 +740,8 @@ h1 > span {
 }
 
 .hero-title h1 {
-  -webkit-animation: slidleft 2s  both ease;
-          animation: slidleft 2s  both ease;
+  -webkit-animation: slidleft 2s both ease;
+          animation: slidleft 2s both ease;
 }
 
 .heart-icon {
@@ -810,18 +817,18 @@ h1 > span {
 }
 
 .item1 {
-  -webkit-animation: sliddown 2s 0s both ease;
-          animation: sliddown 2s 0s both ease;
+  -webkit-animation: sliddown 2s 1.5s both ease;
+          animation: sliddown 2s 1.5s both ease;
 }
 
 .item2 {
-  -webkit-animation: sliddown 2s .4s both ease;
-          animation: sliddown 2s .4s both ease;
+  -webkit-animation: sliddown 2s 1.9s both ease;
+          animation: sliddown 2s 1.9s both ease;
 }
 
 .item3 {
-  -webkit-animation: sliddown 2s .8s both ease;
-          animation: sliddown 2s .8s both ease;
+  -webkit-animation: sliddown 2s 2.3s both ease;
+          animation: sliddown 2s 2.3s both ease;
 }
 
 @-webkit-keyframes sliddown {
