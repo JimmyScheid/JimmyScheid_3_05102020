@@ -40,7 +40,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    animation: slideleft 2s .5 both ease; 
 }
 
 .entree{
@@ -94,18 +93,15 @@
 }
 
 
-.item0{
-    animation: sliddown 2s  both ease;
- }
 
 .item1{
-    animation: sliddown 2s .4s both ease;
+    animation: sliddown 2s 0s both ease;
  }
 .item2{
-    animation: sliddown 2s .8s both ease;
+    animation: sliddown 2s .4s both ease;
 }
 .item3{
-    animation: sliddown 2s 1.2s both ease;
+    animation: sliddown 2s .8s both ease;
 }
 
 
@@ -126,19 +122,6 @@
 }
 
 
-@keyframes slidleft{
-    0%{
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    50%{
-        opacity:0;
-    }
-    100%{
-      opacity: 1;
-      transform: translateX(0px);
-    }
-    }
     
 
 .menu-button{
