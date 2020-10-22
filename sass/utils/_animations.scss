@@ -1,0 +1,68 @@
+/* Animation du loader index.html */
+
+@keyframes load-wrapper{
+    0% {
+        opacity:1;
+        z-index: 2;
+    }
+    70% {
+        opacity: 1;
+    }
+    99%{
+      z-index: 2;
+    }
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+    }
+
+/* Animation des pages du book dans le loader */
+
+    @keyframes rotate{
+        0%{
+          transform: perspective( 600px ) 
+            rotateY( -0deg );
+        }
+      
+        20%{
+          background:darken($couleur-principale,4%);
+        }
+        
+        29.9%{
+            background:darken($couleur-principale,0%);
+        }
+        
+        30%{
+          transform: perspective( 200px ) 
+            rotateY( -90deg );
+        }
+        55%{
+          opacity:1;
+        }
+        59.9%{
+          opacity:0;
+        }
+        60%{
+          transform: perspective( 600px )
+          rotateY( -180deg );
+        }
+        
+        100%{
+        transform: perspective( 600px )
+          rotateY( -180deg );
+        }
+      }
+
+/* Animation des plats */
+
+@keyframes slideUp{
+    0%{ 
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    }

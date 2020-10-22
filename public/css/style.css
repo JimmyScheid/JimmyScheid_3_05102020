@@ -76,6 +76,128 @@ td:not([align]), th:not([align]) {
   bottom: -5px;
 }
 
+/* Animation du loader index.html */
+@-webkit-keyframes load-wrapper {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  70% {
+    opacity: 1;
+  }
+  99% {
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+@keyframes load-wrapper {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  70% {
+    opacity: 1;
+  }
+  99% {
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+/* Animation des pages du book dans le loader */
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+            transform: perspective(600px) rotateY(0deg);
+  }
+  20% {
+    background: #8845d9;
+  }
+  29.9% {
+    background: #9356dc;
+  }
+  30% {
+    -webkit-transform: perspective(200px) rotateY(-90deg);
+            transform: perspective(200px) rotateY(-90deg);
+  }
+  55% {
+    opacity: 1;
+  }
+  59.9% {
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+            transform: perspective(600px) rotateY(-180deg);
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+            transform: perspective(600px) rotateY(-180deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+            transform: perspective(600px) rotateY(0deg);
+  }
+  20% {
+    background: #8845d9;
+  }
+  29.9% {
+    background: #9356dc;
+  }
+  30% {
+    -webkit-transform: perspective(200px) rotateY(-90deg);
+            transform: perspective(200px) rotateY(-90deg);
+  }
+  55% {
+    opacity: 1;
+  }
+  59.9% {
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+            transform: perspective(600px) rotateY(-180deg);
+  }
+  100% {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+            transform: perspective(600px) rotateY(-180deg);
+  }
+}
+
+/* Animation des plats */
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 /* Layouts */
 header {
   position: relative;
@@ -243,68 +365,6 @@ header {
           animation-delay: 0.6s;
 }
 
-@-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: perspective(600px) rotateY(0deg);
-            transform: perspective(600px) rotateY(0deg);
-  }
-  20% {
-    background: #8845d9;
-  }
-  29.9% {
-    background: #9356dc;
-  }
-  30% {
-    -webkit-transform: perspective(200px) rotateY(-90deg);
-            transform: perspective(200px) rotateY(-90deg);
-  }
-  55% {
-    opacity: 1;
-  }
-  59.9% {
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: perspective(600px) rotateY(-180deg);
-            transform: perspective(600px) rotateY(-180deg);
-  }
-  100% {
-    -webkit-transform: perspective(600px) rotateY(-180deg);
-            transform: perspective(600px) rotateY(-180deg);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    -webkit-transform: perspective(600px) rotateY(0deg);
-            transform: perspective(600px) rotateY(0deg);
-  }
-  20% {
-    background: #8845d9;
-  }
-  29.9% {
-    background: #9356dc;
-  }
-  30% {
-    -webkit-transform: perspective(200px) rotateY(-90deg);
-            transform: perspective(200px) rotateY(-90deg);
-  }
-  55% {
-    opacity: 1;
-  }
-  59.9% {
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: perspective(600px) rotateY(-180deg);
-            transform: perspective(600px) rotateY(-180deg);
-  }
-  100% {
-    -webkit-transform: perspective(600px) rotateY(-180deg);
-            transform: perspective(600px) rotateY(-180deg);
-  }
-}
-
 /* Pages */
 .load-wrapper {
   width: 100%;
@@ -314,40 +374,6 @@ header {
   position: fixed;
   -webkit-animation: load-wrapper 3s both;
           animation: load-wrapper 3s both;
-}
-
-@-webkit-keyframes load-wrapper {
-  0% {
-    opacity: 1;
-    z-index: 2;
-  }
-  70% {
-    opacity: 1;
-  }
-  99% {
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-
-@keyframes load-wrapper {
-  0% {
-    opacity: 1;
-    z-index: 2;
-  }
-  70% {
-    opacity: 1;
-  }
-  99% {
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
 }
 
 body {
@@ -544,43 +570,6 @@ a {
   color: #9356DC;
 }
 
-@media screen and (min-width: 768px) {
-  .title {
-    text-align: center;
-  }
-  .progress {
-    padding-top: 1rem;
-  }
-  .progress-global {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .progress-global-item {
-    width: calc(50% - 1.5rem);
-    padding: .5rem 1.5rem;
-    margin-right: 1rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .progress {
-    padding: 0 0 2.8rem 0;
-  }
-  .progress-global-item {
-    width: calc(33% - 1.5rem);
-  }
-}
-
 .restaurant {
   background: #f6f6f6;
   padding: 0 1.2rem 3rem;
@@ -651,7 +640,33 @@ a {
           transform: scale(1.05);
 }
 
+/* Responsive */
 @media screen and (min-width: 768px) {
+  .title {
+    text-align: center;
+  }
+  .progress {
+    padding-top: 1rem;
+  }
+  .progress-global {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .progress-global-item {
+    width: calc(50% - 1.5rem);
+    padding: .5rem 1.5rem;
+    margin-right: 1rem;
+  }
   .restaurant {
     padding-top: 1rem;
   }
@@ -676,6 +691,12 @@ a {
 }
 
 @media screen and (min-width: 992px) {
+  .progress {
+    padding: 0 0 2.8rem 0;
+  }
+  .progress-global-item {
+    width: calc(33% - 1.5rem);
+  }
   .restaurant-card {
     width: calc(33% - .5rem);
   }
@@ -848,68 +869,6 @@ h1 > span {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   opacity: 1;
-}
-
-@-webkit-keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  0% {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes sliddown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    margin-top: -60px;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    margin-top: 0;
-  }
-}
-
-@keyframes sliddown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    margin-top: -60px;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    margin-top: 0;
-  }
 }
 
 .entrance {

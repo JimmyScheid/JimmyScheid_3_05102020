@@ -116,33 +116,9 @@
 
 
 
-@keyframes slideUp{
-0%{ 
-    transform: translateY(20px);
-    opacity: 0;
-}
-100% {
-    transform: translateY(0px);
-    opacity: 1;
-}
-}
 
 
-@keyframes sliddown{
-0%{
-  opacity: 0;
-  transform: translateY(-100px);
-  margin-top: -60px;
-}
-50%{
-    opacity:0;
-}
-100%{
-  opacity: 1;
-  transform: translateY(0px);
-  margin-top: 0;
-}
-}
+
 
 .entrance{
     @extend %title-card-restaurant;

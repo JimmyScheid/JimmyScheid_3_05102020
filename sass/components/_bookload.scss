@@ -34,37 +34,4 @@
   
   
   
-  @keyframes rotate{
-    0%{
-      transform: perspective( 600px ) 
-        rotateY( -0deg );
-    }
   
-    20%{
-      background:darken($couleur-principale,4%);
-    }
-    
-    29.9%{
-        background:darken($couleur-principale,0%);
-    }
-    
-    30%{
-      transform: perspective( 200px ) 
-        rotateY( -90deg );
-    }
-    55%{
-      opacity:1;
-    }
-    59.9%{
-      opacity:0;
-    }
-    60%{
-      transform: perspective( 600px )
-      rotateY( -180deg );
-    }
-    
-    100%{
-    transform: perspective( 600px )
-      rotateY( -180deg );
-    }
-  }
