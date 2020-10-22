@@ -44,66 +44,87 @@
     margin: 0 auto;
 }
 
-.entree{
-    @extend %title-card-restaurant;
-}
 
-.meal{
-    @extend %title-card-restaurant;
-}
-
-.dessert{
-    @extend %title-card-restaurant;
-}
 
 .item{
-    display: flex;
-    justify-content: space-between;
-    background: white;
-    border-radius: 1rem;
+    border: solid 2px #F2F2F2;
+    background-color: white;
+    border-radius: 10px;
     position: relative;
+    width: 100%;
+    margin: 20px auto 10px auto;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;;
+}
+
+.item-container{
+    flex: 1;
+    position: relative;
+    padding: 10px;
+    line-height: 1.5rem;
+}
+
+.item-title{
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.item-subtitle{
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+    width: 80%;
+    white-space: nowrap;
     overflow: hidden;
-    margin:0 auto;
-    margin-bottom: 1rem;
-    box-shadow:2px 4px 8px 3px rgba(0, 0, 0, .1);
-    cursor : pointer;
-    &-desc{     
-        width:80%;
-        padding: .7rem 1rem;
-        & h3{
-            font-size: 1.2rem;
-            font-weight: 700;
-            line-height: 30px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        & p{
-            font-size: .9rem;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-    }
-    &-prix{
-        display: flex;
-        align-items: flex-end;
-        font-weight: 700;
-        font-size: .9rem;
-        padding: 0 1rem .8rem 0;
-    }
+    text-overflow: ellipsis;
+}
+
+.price{
+    font-family: "Roboto", serif;
+    font-size: 1rem;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.item-icon{
+    background-color: #99E2D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    transition: 1s;
+}
+
+.fa-check-circle{
+    opacity: 0;
+    color: white;;
+    font-size: 1.2rem;
+    transform: rotate(180deg);
+    transition: .8s;
+}
+
+.item:hover .item-icon{
+    width: 20%;
+}
+
+.item:hover .fa-check-circle {
+    transform: rotate(0deg);
+    opacity: 1;
 }
 
 
 
-.item1{
-    animation: sliddown 2s 1.5s both ease;
- }
-.item2{
-    animation: sliddown 2s 1.9s both ease;
+@keyframes slideUp{
+0%{ 
+    transform: translateY(20px);
+    opacity: 0;
 }
-.item3{
-    animation: sliddown 2s 2.3s both ease;
+100% {
+    transform: translateY(0px);
+    opacity: 1;
+}
 }
 
 
@@ -123,8 +144,57 @@
 }
 }
 
+.entrance{
+    @extend %title-card-restaurant;
+    animation: slideUp 1000ms  ease-in-out both;
+}
 
-    
+.entrance1{
+    animation: slideUp 1000ms .2s ease-in-out both;
+}
+  
+.entrance2{
+    animation: slideUp 1000ms .4s ease-in-out both;
+}
+
+.entrance3{
+    animation: slideUp 1000ms .6s ease-in-out both;
+}
+
+.meal{
+    @extend %title-card-restaurant;
+    animation: slideUp 1000ms .8s ease-in-out both;
+}
+
+.meal1{
+    animation: slideUp 1000ms 1s ease-in-out both;
+}
+  
+.meal2{
+    animation: slideUp 1000ms 1.2s ease-in-out both;
+}
+
+.meal3{
+    animation: slideUp 1000ms 1.4s ease-in-out both;
+}
+
+
+.dessert{
+    @extend %title-card-restaurant;
+    animation: slideUp 1000ms 1.6s ease-in-out both;
+}
+
+.dessert1{
+    animation: slideUp 1000ms 1.8s ease-in-out both;
+}
+  
+.dessert2{
+    animation: slideUp 1000ms 2s ease-in-out both;
+}
+
+.dessert3{
+    animation: slideUp 1000ms 2.2s ease-in-out both;
+}
 
 .menu-button{
     @include button;

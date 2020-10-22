@@ -187,6 +187,9 @@ a{
 }
 
 @media screen and (min-width:992px){
+    .progress{
+        padding: 0 0 2.8rem 0;
+    }
     .progress-global-item{
         width: calc(33% - 1.5rem);
     }
