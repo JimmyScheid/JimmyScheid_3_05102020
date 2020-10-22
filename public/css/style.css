@@ -317,6 +317,8 @@ a {
   margin-bottom: 1.5rem;
   -webkit-box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .progress-global-item-number {
@@ -360,6 +362,8 @@ a {
 
 .progress-global-item:hover {
   background: #f2eafb;
+  -webkit-box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.15);
 }
 
 .progress-global-item:hover .progress-global-item-desc-icon {
@@ -423,6 +427,12 @@ a {
   overflow: hidden;
   position: relative;
   margin-bottom: 1rem;
+  -webkit-box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .restaurant-card-img {
@@ -455,6 +465,13 @@ a {
   font-size: 1.5rem;
   bottom: 1.5rem;
   right: 1.5rem;
+}
+
+.restaurant-card:hover {
+  -webkit-box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.15);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 @media screen and (min-width: 768px) {
