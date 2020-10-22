@@ -65,6 +65,7 @@
     &-title{
         font-weight: 600;
         font-size: 1.1rem;
+        width: 85%;
     }
     &-subtitle{
         font-size: .9rem;
@@ -159,11 +160,6 @@
     animation: slideUp 1000ms 2.2s ease-in-out both;
 }
 
-
-
-
-
-  
   .item:hover .check-container{
     transform: translate(0px); 
   }
