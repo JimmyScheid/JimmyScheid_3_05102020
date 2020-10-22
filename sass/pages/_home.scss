@@ -107,6 +107,14 @@ a{
         }
     }
 }
+
+.progress-global-item:hover {
+    background: lighten($couleur-principale,35%);
+}
+
+.progress-global-item:hover .progress-global-item-desc-icon {
+    color: $couleur-principale;
+}
 @media screen and (min-width:768px){
     .title{
         text-align: center;

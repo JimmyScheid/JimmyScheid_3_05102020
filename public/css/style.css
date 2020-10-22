@@ -358,6 +358,14 @@ a {
   font-weight: 700;
 }
 
+.progress-global-item:hover {
+  background: #f2eafb;
+}
+
+.progress-global-item:hover .progress-global-item-desc-icon {
+  color: #9356DC;
+}
+
 @media screen and (min-width: 768px) {
   .title {
     text-align: center;
