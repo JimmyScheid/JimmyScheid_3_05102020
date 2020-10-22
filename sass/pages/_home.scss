@@ -61,36 +61,7 @@ a{
         font-weight: 300;
         margin: .5rem 0 1rem 0;
     }
-    &-button{
-        @include button;
-        position: relative;
-        transform: translate(0);
-        padding: 1rem 1.4rem;
-        margin: 1.2rem 0;
-        background: linear-gradient($couleur-secondaire,$couleur-principale);
-        box-shadow: 0px 3px 8px rgba(0, 0px, 0px, .3);
-        cursor: pointer;
-    }
-    &-button::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(lighten($couleur-secondaire, 5%),        
-        lighten($couleur-principale, 5%));
-        z-index: -1;
-        transition: .3s;
-        opacity: 0;
-        border-radius: 50px;
-      }
-}
-.presentation-button:hover::before {
-    opacity: 1;
-    box-shadow: 0px 3px 8px rgba(0, 0px, 0px, .4);
-  }
-
+} 
 
 
 /* Section Progress */
@@ -224,8 +195,8 @@ a{
                 padding: .5rem 1.5rem;
                 margin-right: 1rem;
             }
-            }
         }
+    }
 
     .restaurant{
         padding-top: 1rem;
