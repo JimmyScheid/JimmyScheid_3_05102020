@@ -577,17 +577,19 @@ h1 > span {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: white;
-  padding: .7rem 1rem;
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
   margin-bottom: 1rem;
   -webkit-box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 4px 8px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .item-desc {
   width: 80%;
+  padding: .7rem 1rem;
 }
 
 .item-desc h3 {
@@ -615,6 +617,7 @@ h1 > span {
           align-items: flex-end;
   font-weight: 700;
   font-size: .9rem;
+  padding: 0 1rem .8rem 0;
 }
 
 .item0 {
@@ -729,5 +732,49 @@ h1 > span {
   .menu {
     background: white;
   }
+}
+
+.check-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(100px);
+          transform: translate(100px);
+  -webkit-transition: .8s ease;
+  transition: .8s ease;
+}
+
+.check-box {
+  background: #99E2D0;
+  width: 100px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.check-icon {
+  font-size: 1.5rem;
+  color: white;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.item:hover .check-container {
+  -webkit-transform: translate(0px);
+          transform: translate(0px);
+}
+
+.item:hover .check-icon {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 /*# sourceMappingURL=style.css.map */

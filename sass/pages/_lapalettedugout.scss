@@ -59,14 +59,16 @@
     display: flex;
     justify-content: space-between;
     background: white;
-    padding: .7rem 1rem;
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
+    margin:0 auto;
     margin-bottom: 1rem;
-    box-shadow:2px 4px 8px 3px rgba(0, 0px, 0px, .1);
+    box-shadow:2px 4px 8px 3px rgba(0, 0, 0, .1);
+    cursor : pointer;
     &-desc{     
         width:80%;
+        padding: .7rem 1rem;
         & h3{
             font-size: 1.2rem;
             font-weight: 700;
@@ -87,6 +89,7 @@
         align-items: flex-end;
         font-weight: 700;
         font-size: .9rem;
+        padding: 0 1rem .8rem 0;
     }
 }
 
@@ -157,3 +160,34 @@
     }
 
 }
+
+.check{
+    &-container{ 
+      display:flex;
+      transform: translate(100px);
+      transition: .8s ease;
+    }
+    &-box{
+      background: $couleur-tertiaire;
+      width: 100px;
+      height:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      
+    }
+    &-icon{
+      font-size: 1.5rem;
+      color: white;
+      transform: rotate( -180deg );
+      transition: 1s ease;
+    }
+  }
+  
+  .item:hover .check-container{
+    transform: translate(0px); 
+  }
+  
+  .item:hover .check-icon{
+    transform: rotate(-360deg); 
+  }
