@@ -14,26 +14,22 @@
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
-    &-item{
+
+    &-text{
         display: flex;
         align-items: center;
+        font-size: 1rem;
         color: white;
-        margin-bottom: .5rem;
+        line-height: 1.5rem;
         &-icon{
             font-size: .8rem;
             width: 1.5rem;
         }
-        &-text{
-            font-size: 1rem;
-        }
     }
-    &-contact{
-        font-size: 1rem;
-        &-text{
-            color: white;
-            margin-bottom: .5rem;
-        }
-    }
+}
+.footer-text:hover{
+    color: $couleur-secondaire;
+    transition: .3s;
 }
 
 @media screen and (min-width:768px){
@@ -47,3 +43,4 @@
         }
     } 
 }
+
