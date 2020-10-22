@@ -61,15 +61,16 @@
         position: relative;
         padding: .8rem;
         line-height: 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &-title{
         font-weight: 600;
         font-size: 1.1rem;
-        width: 85%;
     }
     &-subtitle{
         font-size: .9rem;
-        width: 85%;
+        width: 80%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
