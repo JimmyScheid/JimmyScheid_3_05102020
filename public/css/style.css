@@ -725,11 +725,6 @@ h1 > span {
   text-transform: uppercase;
 }
 
-.load-spinner {
-  -webkit-animation: load-wrapper 3s both;
-          animation: load-wrapper 3s both;
-}
-
 .hero {
   position: relative;
 }
@@ -767,14 +762,6 @@ h1 > span {
 .hero-title h1 {
   -webkit-animation: slidleft 2s both ease;
           animation: slidleft 2s both ease;
-}
-
-.heart-icon {
-  position: absolute;
-  font-size: 1.5rem;
-  right: 2.5rem;
-  -webkit-animation: slidleft 2s  both ease;
-          animation: slidleft 2s  both ease;
 }
 
 .menu {
@@ -863,16 +850,6 @@ h1 > span {
   transition: .8s;
 }
 
-.item:hover .item-icon {
-  width: 15%;
-}
-
-.item:hover .fa-check-circle {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  opacity: 1;
-}
-
 .entrance {
   -webkit-animation: slideUp 1000ms  ease-in-out both;
           animation: slideUp 1000ms  ease-in-out both;
@@ -933,6 +910,7 @@ h1 > span {
           animation: slideUp 1000ms 2.2s ease-in-out both;
 }
 
+/* Hover */
 .item:hover .check-container {
   -webkit-transform: translate(0px);
           transform: translate(0px);
@@ -941,6 +919,16 @@ h1 > span {
 .item:hover .check-icon {
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
+}
+
+.item:hover .item-icon {
+  width: 15%;
+}
+
+.item:hover .fa-check-circle {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  opacity: 1;
 }
 
 /* Responsive */
