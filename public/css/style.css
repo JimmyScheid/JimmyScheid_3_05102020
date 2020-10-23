@@ -755,11 +755,6 @@ a {
   border-top-right-radius: 2.5rem;
 }
 
-.hero-title h1 {
-  -webkit-animation: slidleft 2s both ease;
-          animation: slidleft 2s both ease;
-}
-
 h1 > span {
   text-transform: uppercase;
 }
