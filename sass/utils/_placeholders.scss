@@ -1,0 +1,18 @@
+%title-card-restaurant {
+    padding: 1.5rem 2rem 0;
+    position: relative;
+    & h2{
+        font-size: 1rem;
+        text-transform: uppercase;
+        position: relative;
+        margin-bottom: 1rem;
+        &:before{
+            content: "";
+            width: 2.5rem;
+            height: .2rem;
+            background: $couleur-tertiaire;
+            position: absolute;
+            bottom: -5px;
+        }
+    }
+}

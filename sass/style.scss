@@ -1,23 +1,23 @@
 /* Base */
-@import "base/minireset";
+@import "base/_minireset.scss";
 
 /* Utils */
-@import "utils/variables";
-@import "utils/mixins";
-@import "utils/placeholders";
-@import "utils/functions";
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+@import "utils/_placeholders.scss";
+@import "utils/_functions.scss";
+@import "utils/_animations.scss";
 
 /* Layouts */
-@import "layouts/header";
-@import "layouts/footer";
+@import "layouts/_header.scss";
+@import "layouts/_footer.scss";
 
 /* Composants */
-@import "components/buttons";
+@import "components/_heart.scss";
+@import "components/_bookload.scss";
+@import "components/_button.scss";
 
 /* Pages */
-@import "pages/home";
-@import "pages/alafrancaise";
-@import "pages/lanoteenchantee";
-@import "pages/lapalettedugout";
-@import "pages/ledelicedessens";
+@import "pages/_home.scss";
+@import "pages/_menus.scss";
 

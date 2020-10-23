@@ -1,0 +1,181 @@
+.hero {
+    position: relative;
+    & img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    &-title{
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto; 
+        max-width: 1440px;
+        width: 100%;   
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 2rem .7rem;
+        background: $fond-gris-restaurant;
+        font-family: $font-cursive;
+        font-size: 1.7rem;
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 2.5rem;
+    }
+}
+
+h1 > span{
+    text-transform: uppercase;
+}
+
+.menu{
+    background: $fond-gris-restaurant;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+
+.item{
+    background: white;
+    border-radius: 1rem;
+    position: relative;
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    box-shadow:2px 4px 8px 3px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor : pointer;
+    &-container{
+        flex: 1;
+        position: relative;
+        padding: .8rem;
+        line-height: 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &-title{
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    &-subtitle{
+        font-size: .9rem;
+        width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        & .price{
+            font-size: .9rem;
+            font-weight: 700;
+            position: absolute;
+            right: 1rem;
+            bottom: .8rem;
+        }
+    }
+    &-icon{
+        background-color: $couleur-tertiaire;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0%;
+        transition: 1s;
+        & .fa-check-circle{
+            opacity: 0;
+            color: white;;
+            font-size: 1.2rem;
+            transform: rotate(180deg);
+            transition: .8s;
+        }
+    }
+}
+
+
+.entrance{
+    @extend %title-card-restaurant;
+    animation: slideUp 1000ms  ease-in-out both;
+}
+
+.entrance1{
+    animation: slideUp 1000ms .2s ease-in-out both;
+}
+  
+.entrance2{
+    animation: slideUp 1000ms .4s ease-in-out both;
+}
+
+.entrance3{
+    animation: slideUp 1000ms .6s ease-in-out both;
+}
+
+.entrance4{
+    animation: slideUp 1000ms .7s ease-in-out both;
+}
+
+.meal{
+    @extend %title-card-restaurant;
+    animation: slideUp 1000ms .8s ease-in-out both;
+}
+
+.meal1{
+    animation: slideUp 1000ms 1s ease-in-out both;
+}
+  
+.meal2{
+    animation: slideUp 1000ms 1.2s ease-in-out both;
+}
+
+.meal3{
+    animation: slideUp 1000ms 1.4s ease-in-out both;
+}
+
+
+.dessert{
+    @extend %title-card-restaurant;
+    animation: slideUp 1000ms 1.6s ease-in-out both;
+}
+
+.dessert1{
+    animation: slideUp 1000ms 1.8s ease-in-out both;
+}
+  
+.dessert2{
+    animation: slideUp 1000ms 2s ease-in-out both;
+}
+
+.dessert3{
+    animation: slideUp 1000ms 2.2s ease-in-out both;
+}
+
+/* Hover */
+
+.item:hover .check-container{
+    transform: translate(0px); 
+}
+  
+.item:hover .check-icon{
+    transform: rotate(-360deg); 
+}
+
+.item:hover .item-icon{
+    width: 15%;
+}
+
+.item:hover .fa-check-circle {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+
+/* Responsive */
+
+@media screen and (min-width:992px){
+    .hero-title{
+        position: relative;
+        background: white;
+    }
+    .menu{
+        background: white;
+    }
+
+}
