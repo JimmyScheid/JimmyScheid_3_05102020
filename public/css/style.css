@@ -721,10 +721,6 @@ a {
   }
 }
 
-h1 > span {
-  text-transform: uppercase;
-}
-
 .hero {
   position: relative;
 }
@@ -762,6 +758,10 @@ h1 > span {
 .hero-title h1 {
   -webkit-animation: slidleft 2s both ease;
           animation: slidleft 2s both ease;
+}
+
+h1 > span {
+  text-transform: uppercase;
 }
 
 .menu {
