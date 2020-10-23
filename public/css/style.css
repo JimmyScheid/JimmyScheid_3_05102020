@@ -870,6 +870,11 @@ h1 > span {
           animation: slideUp 1000ms .6s ease-in-out both;
 }
 
+.entrance4 {
+  -webkit-animation: slideUp 1000ms .7s ease-in-out both;
+          animation: slideUp 1000ms .7s ease-in-out both;
+}
+
 .meal {
   -webkit-animation: slideUp 1000ms .8s ease-in-out both;
           animation: slideUp 1000ms .8s ease-in-out both;
