@@ -171,6 +171,17 @@ a{
     }  
 }
 
+.flag-new{
+    background: $couleur-tertiaire;
+    color: $font-vert;
+    font-weight: 700;
+    border-radius: .2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: .2rem .8rem;
+  }
+
 .restaurant-card:hover{
     box-shadow:2px 4px 8px 3px rgba(0, 0px, 0px, .15);
     transform: scale(1.05);
