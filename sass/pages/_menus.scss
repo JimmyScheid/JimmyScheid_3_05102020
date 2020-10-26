@@ -1,3 +1,10 @@
+/* Génaral */
+h1 > span{
+    text-transform: uppercase;
+}
+
+
+/* Section Hero*/
 .hero {
     position: relative;
     & img{
@@ -23,10 +30,8 @@
     }
 }
 
-h1 > span{
-    text-transform: uppercase;
-}
 
+/* Section Menu */
 .menu{
     background: $fond-gris-restaurant;
     max-width: 1440px;
@@ -34,8 +39,6 @@ h1 > span{
     flex-direction: column;
     margin: 0 auto;
 }
-
-
 
 .item{
     background: white;
@@ -91,64 +94,58 @@ h1 > span{
 }
 
 
+/* Bloc Entrance */
 .entrance{
     @extend %title-card-restaurant;
     animation: slideUp 1000ms  ease-in-out both;
 }
-
 .entrance1{
     animation: slideUp 1000ms .2s ease-in-out both;
-}
-  
+}  
 .entrance2{
     animation: slideUp 1000ms .4s ease-in-out both;
 }
-
 .entrance3{
     animation: slideUp 1000ms .6s ease-in-out both;
 }
-
 .entrance4{
     animation: slideUp 1000ms .7s ease-in-out both;
 }
 
+
+/* Bloc Meal */
 .meal{
     @extend %title-card-restaurant;
     animation: slideUp 1000ms .8s ease-in-out both;
 }
-
 .meal1{
     animation: slideUp 1000ms 1s ease-in-out both;
-}
-  
+}  
 .meal2{
     animation: slideUp 1000ms 1.2s ease-in-out both;
 }
-
 .meal3{
     animation: slideUp 1000ms 1.4s ease-in-out both;
 }
 
 
+/* Bloc dessert */
 .dessert{
     @extend %title-card-restaurant;
     animation: slideUp 1000ms 1.6s ease-in-out both;
 }
-
 .dessert1{
     animation: slideUp 1000ms 1.8s ease-in-out both;
-}
-  
+} 
 .dessert2{
     animation: slideUp 1000ms 2s ease-in-out both;
 }
-
 .dessert3{
     animation: slideUp 1000ms 2.2s ease-in-out both;
 }
 
-/* Hover */
 
+/* Hover */
 .item:hover .check-container{
     transform: translate(0px); 
 }
@@ -164,18 +161,4 @@ h1 > span{
 .item:hover .fa-check-circle {
     transform: rotate(0deg);
     opacity: 1;
-}
-
-
-/* Responsive */
-
-@media screen and (min-width:992px){
-    .hero-title{
-        position: relative;
-        background: white;
-    }
-    .menu{
-        background: white;
-    }
-
 }

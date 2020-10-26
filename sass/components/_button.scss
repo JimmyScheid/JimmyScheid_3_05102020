@@ -9,15 +9,11 @@
     padding: 1rem 3rem;
     margin: 2rem auto 4rem;
     background: linear-gradient($couleur-secondaire,$couleur-principale);
-    box-shadow: 0px 3px 8px rgba(0, 0px, 0px, .3);
+    @extend %shadow;
     cursor: pointer;
     &::before{
         content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        @include absolute-el(0, 0, 0, 0, 0, 0);
         background: linear-gradient(lighten($couleur-secondaire, 5%),        
         lighten($couleur-principale, 5%));
         z-index: -1;
@@ -28,5 +24,5 @@
 }
 .button:hover::before {
     opacity: 1;
-    box-shadow: 0px 3px 8px rgba(0, 0px, 0px, .4);
+    @extend %light-shadow;
   }
