@@ -1,3 +1,21 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Shadow */
+%shadow{
+    box-shadow: $shadow;
+}
+
+%light-shadow{
+    box-shadow: $dark-shadow;
+}
+
+
+/* Titres du menu des pages restaurant */
 %title-card-restaurant {
     padding: 1.5rem 2rem 0;
     position: relative;
@@ -16,3 +34,5 @@
         }
     }
 }
+
+

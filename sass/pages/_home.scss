@@ -1,14 +1,4 @@
-.load-wrapper{
-    width:100%;
-    height: 100vh;
-    background: white;  
-    opacity:1;
-    position: fixed;
-    animation: load-wrapper 3s both;
-  }
-  
-
-
+/* Génaral */
 body{
     font-family: $font-sans-serif;
 }
@@ -18,20 +8,31 @@ a{
     text-decoration: none;
 }
 
+
+/* Fond loader*/
+.load-wrapper{
+    width:100%;
+    height: 100vh;
+    background: white;  
+    opacity:1;
+    position: fixed;
+    animation: load-wrapper 3s both;
+  }
+
+
+/* Titre */
 .title{
     font-size: 1.5rem;
     font-weight: 700;
     padding: 2.5rem 0 2rem; 
 }
 
-/* Section Localisation */
 
+/* Section Localisation */
 .localisation{
+    @extend %flex-center;
     background-color: $fond-gris-localisation;
     padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     &-icon{
         margin-right:1rem ;
     }
@@ -41,12 +42,11 @@ a{
     }  
 }
 
-/* Section Presentation */
 
+/* Section Presentation */
 .presentation{
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     background-color: $fond-gris-restaurant;
     padding: 2.5rem 0;
@@ -65,7 +65,6 @@ a{
 
 
 /* Section Progress */
-
 .progress{
     max-width: 1440px;
     margin: 0 auto;
@@ -82,14 +81,12 @@ a{
             border-radius: 25px;
             position: relative;
             margin-bottom: 1.5rem;
-            box-shadow:2px 4px 8px 3px rgba(0, 0px, 0px, .1);
             transition: .3s;
+            @extend %shadow;
             &-number{
+                @extend %flex-center;
                 position: absolute;
                 left: -.7rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 width: 1.5rem;
                 height: 1.5rem;
                 border-radius: 50px;
@@ -113,17 +110,8 @@ a{
     }
 }
 
-.progress-global-item:hover {
-    background: lighten($couleur-principale,35%);
-    box-shadow:2px 4px 8px 3px rgba(0, 0px, 0px, .15);
-}
 
-.progress-global-item:hover .progress-global-item-desc-icon {
-    color: $couleur-principale;
-}
-
-
-
+/* Section restaurant */
 .restaurant{
     background: $fond-gris-restaurant;
     padding: 0 1.2rem 3rem  ;
@@ -139,7 +127,7 @@ a{
         overflow: hidden;
         position: relative;
         margin-bottom: 1rem;
-        box-shadow:2px 4px 8px 3px rgba(0, 0px, 0px, .1);
+        @extend %shadow;
         transform: scale(1);
         transition: .3s;
 
@@ -182,77 +170,20 @@ a{
     padding: .2rem .8rem;
   }
 
+
+/* Hover */
+.progress-global-item:hover {
+    background: lighten($couleur-principale,35%);
+    @extend %light-shadow;
+}
+
+.progress-global-item:hover .progress-global-item-desc-icon {
+    color: $couleur-principale;
+}
+ 
 .restaurant-card:hover{
-    box-shadow:2px 4px 8px 3px rgba(0, 0px, 0px, .15);
+    @extend %light-shadow;
     transform: scale(1.05);
 }
 
 
-/* Responsive */
-
-@media screen and (min-width:768px){
-    .title{
-        text-align: center;
-    }
-    .progress{
-        padding-top: 1rem;
-        &-global{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            &-item{
-                width: calc(50% - 1.5rem);
-                padding: .5rem 1.5rem;
-                margin-right: 1rem;
-            }
-        }
-    }
-
-    .restaurant{
-        padding-top: 1rem;
-        &-global{
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;    
-        }
-        &-card{
-            margin-right: 1rem;
-            width: calc(50% - .5rem);
-            &:nth-child(2), &:nth-child(4) {
-                margin-right: 0;
-            }
-        }  
-    }
-}
-
-@media screen and (min-width:992px){
-    .progress{
-        padding: 0 0 2.8rem 0;
-    }
-    .progress-global-item{
-        width: calc(33% - 1.5rem);
-    }
-
-    .restaurant-card{
-        width: calc(33% - .5rem);
-        &:nth-child(2){
-            margin-right: 1rem;
-        }
-        &:nth-child(3) {
-            margin-right: 0;
-        }
-    }  
-}
-
-@media screen and (min-width:1200px){
-    .restaurant-card{
-        width: calc(25% - .8rem);
-        &:nth-child(2), &:nth-child(3){
-            margin-right: 1rem;
-        }
-        &:nth-child(4) { 
-           margin-right: 0;
-        }
-    }  
-}
